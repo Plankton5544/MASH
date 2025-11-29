@@ -1,6 +1,5 @@
 ```
 #==BASH=Math=Library==#
-
 A pure BASH floating-point arithmetic library using only shell builtins; No external dependencies are required!
 
 #-FEATURES-#
@@ -12,10 +11,10 @@ A pure BASH floating-point arithmetic library using only shell builtins; No exte
   |- Advanced functions: square root, power, absolute value
   |- Rounding: floor, ceiling, round
   |- Comparison operations
-
+  |- Min/Max operations
+  |- Trigonometric functions: sine, cosine
 
 #-Usage-#
-
 Source the library in your script:
 ~~~
     source math.sh
@@ -26,29 +25,28 @@ Source the library in your script:
 ~~~
     #--Addition--#
     result=$(fp_add "3.14" "2.86")  # Returns: 6.000000
-
     #--Subtraction--#
     result=$(fp_sub "10.5" "3.2")   # Returns: 7.300000
-
     #--Multiplication--#
     result=$(fp_mul "2.5" "4.0")    # Returns: 10.000000
-
     # Division
     result=$(fp_div "15.0" "3.0")   # Returns: 5.000000
-    ~~~
+~~~
 
-    #-Advanced-Functions-#
+#-Advanced-Functions-#
 
-    ~~~
+~~~
     #--Square-Root--#
     result=$(fp_sqrt "25.0")        # Returns: 5.000000
-
     #--Power--#
     (Integer Exponents Only!)
     result=$(fp_pow "2.0" "3")      # Returns: 8.000000
-
     #--Absolute-Value--#
     result=$(fp_abs "-5.5")         # Returns: 5.500000
+    #--Minimum--#
+    result=$(fp_min "3.5" "7.2")    # Returns: 3.500000
+    #--Maximum--#
+    result=$(fp_max "3.5" "7.2")    # Returns: 7.200000
 ~~~
 
 #-Rounding-Functions-#
@@ -56,14 +54,25 @@ Source the library in your script:
 ~~~
     #--Round-To-Nearest-Integer--#
     result=$(fp_rnd "3.7")          # Returns: 4.000000
-
     #--Floor--#
     (Round Down)
     result=$(fp_floor "3.7")        # Returns: 3.000000
-
     #--Ceiling--#
     (Round Up)
     result=$(fp_ceil "3.2")         # Returns: 4.000000
+~~~
+
+#-Trigonometric-Functions-#
+
+~~~
+    #--Sine--#
+    (Input in Radians!)
+    result=$(fp_sin "1.570796")     # Returns: 1.000000 (π/2)
+    #--Cosine--#
+    (Input in Radians!)
+    result=$(fp_cos "3.141593")     # Returns: -1.000000 (π)
+    #--Pi-Constant--#
+    result=$(fp_pi)                 # Returns: 3.141593
 ~~~
 
 #-Comparison-#
@@ -96,13 +105,14 @@ or:
     bash test_math.sh
 ~~~
 
-
 #-Limitations-#
 |
 |- `fp_pow()` Only supports integer exponents
 |- Fixed precision of 6 decimal places (configurable)
 |- Large numbers may overflow bash's integer arithmetic limits
 |- Unexpected string mishandling may occur!
+|- Trigonometric functions use Taylor series approximation (8-10 terms)
+|- Trig functions are slower due to series computation
 
 #-Why-Use-This-#
 |
