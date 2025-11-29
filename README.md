@@ -1,4 +1,4 @@
-'''
+```
 #==BASH=Math=Library==#
 
 A pure BASH floating-point arithmetic library using only shell builtins; No external dependencies are required!
@@ -120,4 +120,4 @@ MIT License - See LICENSE file for details
 
 Contributions welcome! Feel free to submit issues or pull requests.
 Note - I'm inexperienced In GitHub, & its complexities!
-'''
+```
