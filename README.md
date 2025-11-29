@@ -93,18 +93,6 @@ The default precision is 6 decimal places. To change this, modify the `SCALE` va
     SCALE=6  # Number of decimal places
 ~~~
 
-#-Testing-#
-
-Run the included test suite:
-
-~~~
-    ./test_math.sh
-~~~
-or:
-~~~
-    bash test_math.sh
-~~~
-
 #-Limitations-#
 |
 |- `fp_pow()` Only supports integer exponents
