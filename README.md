@@ -1,11 +1,12 @@
+'''
 #==BASH=Math=Library==#
 
-A pure BASH floating-point arithmetic library using only shell builtins; No external dependencies like are required!
+A pure BASH floating-point arithmetic library using only shell builtins; No external dependencies are required!
 
 #-FEATURES-#
 |
 |- **Fixed-point arithmetic** with 6 decimal places of precision
-|- **Pure Bash** built with onlz bash builtins, so no external calls!
+|- **Pure Bash** built with only bash builtins, so no external calls!
 |-- **Comprehensive operations** including:
   |- Basic arithmetic: add, subtract, multiply, divide
   |- Advanced functions: square root, power, absolute value
@@ -109,7 +110,7 @@ or:
 |- **Portable** - Great for environments where `bc`, `awk`, or Python aren't available
 |- **Lightweight** - Perfect for shell scripts that need simple math
 |- **Educational** - Shows how to implement floating-point arithmetic in pure shell
-|- **Fun** - Demonstrates the fundamental floating point arthimetic in computer logic.
+|- **Fun** - Demonstrates the fundamental floating point arithmetic in computer logic.
 
 #==License==#
 
@@ -118,4 +119,5 @@ MIT License - See LICENSE file for details
 #==Contributing==#
 
 Contributions welcome! Feel free to submit issues or pull requests.
-Note- I'm inexperienced In GitHub, & its complexities!
+Note - I'm inexperienced In GitHub, & its complexities!
+'''
