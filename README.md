@@ -5,9 +5,9 @@ A pure BASH floating-point arithmetic library using only shell builtins; No exte
 
 #-FEATURES-#
 |
-|- **Fixed-point arithmetic** with 6 decimal places of precision
-|- **Pure Bash** built with only bash builtins, so no external calls!
-|-- **Comprehensive operations** including:
+|- Fixed-point arithmetic with 6 decimal places of precision
+|- Pure Bash** built with only bash builtins, so no external calls!
+|-- **Comprehensive operations including:
   |- Basic arithmetic: add, subtract, multiply, divide
   |- Advanced functions: square root, power, absolute value
   |- Rounding: floor, ceiling, round
@@ -106,11 +106,11 @@ or:
 
 #-Why-Use-This-#
 |
-|- **No external dependencies** - Works on any system with Bash (Version Testing Isn't Available Yet)
-|- **Portable** - Great for environments where `bc`, `awk`, or Python aren't available
-|- **Lightweight** - Perfect for shell scripts that need simple math
-|- **Educational** - Shows how to implement floating-point arithmetic in pure shell
-|- **Fun** - Demonstrates the fundamental floating point arithmetic in computer logic.
+|- No External Dependencies - Works on any system with Bash (Version Testing Isn't Available Yet)
+|- Portable - Great for environments where `bc`, `awk`, or Python aren't available
+|- Lightweight - Perfect for shell scripts that need simple math
+|- Educational - Shows how to implement floating-point arithmetic in pure shell
+|- Fun - Demonstrates the fundamental floating point arithmetic in computer logic.
 
 #==License==#
 
